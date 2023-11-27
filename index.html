@@ -1,23 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data Analisys</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script>
-       $(function() {
-          $("#scenario1").load("lineAnalisys/scenario1.html");
-       });
-    </script>
-</head>
-  <body>
-    <h1>Line Analisys</h1>
-    <h2>Scenario 1</h2>
-    <div id="scenario1"></div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
-</html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Analisys</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+    $(function () {
+      $("#scenario1").load("blackBox/lineAnalisys/scenario1.html");
+      $("#scenario2").load("blackBox/lineAnalisys/scenario2.html");
+      $("#manualCounts").load("manualCounts.html");
+      $("#lineAccuracy").load("blackBox/lineAnalisys/accuracyAndError.html");
+      $("#confidence1").load("blackBox/confidence/confidence1.html");
+      $("#confidence2").load("blackBox/confidence/confidence2.html");
+      $("#confidenceAccuracy").load("blackBox/confidence/accuracyAndError.html");
+
+      
+
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Manual counts</h1>
+  <div id="manualCounts" style="width:50%"></div>
+  <h1>Line Analisys</h1>
+  <h2>Scenario 1</h2>
+  <div id="scenario1" style="width:50%"></div>
+  <h2>Scenario 2</h2>
+  <div id="scenario2" style="width:50%"></div>
+  <h2>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h2>
+  <div id="lineAccuracy" style="width:80%"></div>
+  <hr>
+  <h1>Confidence Analisys</h1>
+  <h2>Scenario 1</h2>
+  <div id="confidence1" style="width:50%"></div>
+  <h2>Scenario 2</h2>
+  <div id="confidence2" style="width:50%"></div>
+  <h2>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h2>
+  <div id="confidenceAccuracy" style="width:80%"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
