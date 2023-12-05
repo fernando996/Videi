@@ -14,35 +14,100 @@
       $("#scenario2").load("blackBox/lineAnalisys/scenario2.html");
       $("#manualCounts").load("manualCounts.html");
       $("#lineAccuracy").load("blackBox/lineAnalisys/accuracyAndError.html");
-      $("#confidence1").load("blackBox/confidence/confidence1.html");
-      $("#confidence2").load("blackBox/confidence/confidence2.html");
-      $("#confidenceAccuracy").load("blackBox/confidence/accuracyAndError.html");
+      $("#bbconfidence1").load("blackBox/confidence/confidence1.html");
+      $("#bbconfidence2").load("blackBox/confidence/confidence2.html");
+      $("#bbconfidenceAccuracy").load("blackBox/confidence/accuracyAndError.html");
 
-      
+
+      $("#confidence1").load("openBox/confidence/confidence1.html");
+      $("#confidence2").load("openBox/confidence/confidence2.html");
+      $("#confidenceAccuracy").load("openBox/confidence/accuracyAndError.html");
+
+
 
     });
   </script>
 </head>
 
 <body>
-  <h1>Manual counts</h1>
-  <div id="manualCounts" style="width:50%"></div>
-  <h1>Line Analisys</h1>
-  <h2>Scenario 1</h2>
-  <div id="scenario1" style="width:50%"></div>
-  <h2>Scenario 2</h2>
-  <div id="scenario2" style="width:50%"></div>
-  <h2>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h2>
-  <div id="lineAccuracy" style="width:80%"></div>
+  <div class="d-flex justify-content-center mb-4">
+    <h1>Videos Manual counts</h1>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="manualCounts" style="width:60%"></div>
+  </div>
   <hr>
-  <h1>Confidence Analisys</h1>
-  <h2>Scenario 1</h2>
-  <div id="confidence1" style="width:50%"></div>
-  <h2>Scenario 2</h2>
-  <div id="confidence2" style="width:50%"></div>
-  <h2>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h2>
-  <div id="confidenceAccuracy" style="width:80%"></div>
-
+  <div class="d-flex justify-content-center mb-4">
+    <h1>Black-Box Analisys</h1>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h2>Line Analisys</h2>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 1</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="scenario1" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2 mt-4">
+    <h3>Scenario 2</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="scenario2" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2 mt-4">
+    <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="lineAccuracy" style="width:80%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-4 mt-4">
+    <h2>Confidence</h2>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 1</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="bbconfidence1" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 2</h3>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <div id="bbconfidence2" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <div id="bbconfidenceAccuracy" style="width:80%"></div>
+  </div>
+  <hr>
+  <div class="d-flex justify-content-center mb-4">
+    <h1>Open-Box Analisys</h1>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h2>Confidence Analisys</h2>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 1</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="confidence1" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 2</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="confidence2" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="confidenceAccuracy" style="width:80%"></div>
+  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
