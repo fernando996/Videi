@@ -12,11 +12,19 @@
     $(function () {
       $("#scenario1").load("blackBox/lineAnalisys/scenario1.html");
       $("#scenario2").load("blackBox/lineAnalisys/scenario2.html");
-      $("#manualCounts").load("manualCounts.html");
       $("#lineAccuracy").load("blackBox/lineAnalisys/accuracyAndError.html");
+      $("#manualCounts").load("manualCounts.html");
       $("#bbconfidence1").load("blackBox/confidence/confidence1.html");
       $("#bbconfidence2").load("blackBox/confidence/confidence2.html");
       $("#bbconfidenceAccuracy").load("blackBox/confidence/accuracyAndError.html");
+
+
+
+
+      $("#openBoxscenario1").load("openBox/lineAnalisys/scenario1.html");
+      $("#openBoxscenario2").load("openBox/lineAnalisys/scenario2.html");
+      $("#openBoxlineAccuracy").load("openBox/lineAnalisys/accuracyAndError.html");
+
 
 
       $("#confidence1").load("openBox/confidence/confidence1.html");
@@ -86,6 +94,31 @@
   <div class="d-flex justify-content-center mb-4">
     <h1>Open-Box Analisys</h1>
   </div>
+
+
+  <div class="d-flex justify-content-center mb-2">
+    <h2>Line Analisys</h2>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 1</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="openBoxscenario1" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2 mt-4">
+    <h3>Scenario 2</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="openBoxscenario2" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2 mt-4">
+    <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="openBoxlineAccuracy" style="width:80%"></div>
+  </div>
+
+
   <div class="d-flex justify-content-center mb-2">
     <h2>Confidence Analisys</h2>
   </div>
@@ -107,7 +140,7 @@
   <div class="d-flex justify-content-center">
     <div id="confidenceAccuracy" style="width:80%"></div>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
