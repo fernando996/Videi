@@ -20,102 +20,108 @@
       $("#videoscenario1").load("blackBox/videoSize/scenario1.html");
       $("#videoscenario2").load("blackBox/videoSize/scenario2.html");
       $("#videoSize").load("blackBox/videoSize/accuracyAndError.html");
-
-      
-
-
-
       $("#openBoxscenario1").load("openBox/lineAnalisys/scenario1.html");
       $("#openBoxscenario2").load("openBox/lineAnalisys/scenario2.html");
       $("#openBoxlineAccuracy").load("openBox/lineAnalisys/accuracyAndError.html");
-
-
-
       $("#confidence1").load("openBox/confidence/confidence1.html");
       $("#confidence2").load("openBox/confidence/confidence2.html");
       $("#confidenceAccuracy").load("openBox/confidence/accuracyAndError.html");
 
+      $("#openVideoSize1").load("openBox/videoSize/scenario1.html");
+      $("#openVideoSize2").load("openBox/videoSize/scenario2.html");
+      $("#openVideoSizeAccuracy").load("openBox/videoSize/accuracyAndError.html");
+
 
 
     });
+
+    // function resultFormatting(tableId, minVal, maxVal) {
+    //   var rows = document.getElementById("myTable").getElementsByTagName('tr');
+    //   for (var i = 0; i < rows[0].children.length && rows[0].children[i].innerHTML !== "Result"; i++);
+    //   for (var j = 1; j < rows.length; j++) {
+    //     rows[j].classList.add(rows[j].children[i].innerHTML === "Success" ? 'selected' : 'bad');
+    //   }
+    // };
   </script>
 </head>
 
 <body>
-  <div class="d-flex justify-content-center mb-4">
-    <h1>Videos Manual counts</h1>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="manualCounts" style="width:60%"></div>
-  </div>
-  <hr>
-  <div class="d-flex justify-content-center mb-4">
-    <h1>Black-Box Analisys</h1>
-  </div>
-  <div class="d-flex justify-content-center mb-2">
-    <h2>Line Analisys</h2>
-  </div>
-  <div class="d-flex justify-content-center mb-2">
-    <h3>Scenario 1</h3>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="scenario1" style="width:50%"></div>
-  </div>
-  <div class="d-flex justify-content-center mb-2 mt-4">
-    <h3>Scenario 2</h3>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="scenario2" style="width:50%"></div>
-  </div>
-  <div class="d-flex justify-content-center mb-2 mt-4">
-    <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="lineAccuracy" style="width:80%"></div>
-  </div>
-  <div class="d-flex justify-content-center mb-4 mt-4">
-    <h2>Confidence</h2>
-  </div>
-  <div class="d-flex justify-content-center mb-2">
-    <h3>Scenario 1</h3>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="bbconfidence1" style="width:50%"></div>
-  </div>
-  <div class="d-flex justify-content-center mb-2">
-    <h3>Scenario 2</h3>
-  </div>
-  <div class="d-flex justify-content-center mb-2">
-    <div id="bbconfidence2" style="width:50%"></div>
-  </div>
-  <div class="d-flex justify-content-center mb-2">
-    <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
-  </div>
-  <div class="d-flex justify-content-center mb-2">
-    <div id="bbconfidenceAccuracy" style="width:80%"></div>
-  </div>
+  <div class="bg-secondary">
+    <div class="d-flex justify-content-center mb-4">
+      <h1>Videos Manual counts</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="manualCounts" style="width:60%"></div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-center mb-4">
+      <h1>Black-Box Analisys</h1>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <h2>Line Analisys</h2>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <h3>Scenario 1</h3>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="scenario1" style="width:50%"></div>
+    </div>
+    <div class="d-flex justify-content-center mb-2 mt-4">
+      <h3>Scenario 2</h3>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="scenario2" style="width:50%"></div>
+    </div>
+    <div class="d-flex justify-content-center mb-2 mt-4">
+      <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="lineAccuracy" style="width:80%"></div>
+    </div>
+    <div class="d-flex justify-content-center mb-4 mt-4">
+      <h2>Confidence</h2>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <h3>Scenario 1</h3>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="bbconfidence1" style="width:50%"></div>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <h3>Scenario 2</h3>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <div id="bbconfidence2" style="width:50%"></div>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <div id="bbconfidenceAccuracy" style="width:80%"></div>
+    </div>
 
 
-  <div class="d-flex justify-content-center mb-2">
-    <h2>Video size and foward line</h2>
-  </div>
-  <div class="d-flex justify-content-center mb-2">
-    <h3>Scenario 1</h3>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="videoscenario1" style="width:50%"></div>
-  </div>
-  <div class="d-flex justify-content-center mb-2 mt-4">
-    <h3>Scenario 2</h3>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="videoscenario2" style="width:50%"></div>
-  </div>
-  <div class="d-flex justify-content-center mb-2 mt-4">
-    <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="videoSize" style="width:80%"></div>
+    <div class="d-flex justify-content-center mb-2">
+      <h2>Video size and foward line</h2>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
+      <h3>Scenario 1</h3>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="videoscenario1" style="width:50%"></div>
+    </div>
+    <div class="d-flex justify-content-center mb-2 mt-4">
+      <h3>Scenario 2</h3>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="videoscenario2" style="width:50%"></div>
+    </div>
+    <div class="d-flex justify-content-center mb-2 mt-4">
+      <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div id="videoSize" style="width:80%"></div>
+    </div>
   </div>
 
 
@@ -169,6 +175,29 @@
   <div class="d-flex justify-content-center">
     <div id="confidenceAccuracy" style="width:80%"></div>
   </div>
+
+  <div class="d-flex justify-content-center mb-2">
+    <h2>Video Size</h2>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 1</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="openVideoSize1" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 2</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="openVideoSize1" style="width:50%"></div>
+  </div>
+  <div class="d-flex justify-content-center mb-2">
+    <h3>Scenario 1 and Scenario 2 Accuracy and Error Percentage</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div id="openVideoSizeAccuracy" style="width:80%"></div>
+  </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
